@@ -1,3 +1,30 @@
+const inputUsuarioIngresado=document.querySelector("#usuario-ingresado");
+const inputContraseniaIngresado=document.querySelector("#contrasenia-ingresada");
+const inputContraseniaVerif=document.querySelector("#contrasenia-verif");
+
+function registrar() {
+
+    let contraseniaUno=inputContraseniaIngresado.value;
+    let contraseniaDos=inputContraseniaVerif.value;
+
+    if (contraseniaUno === contraseniaDos) {
+        alert("son iguales");
+        ocument.querySelector("a").href="./index.html";
+    }else{
+        alert(" no son iguales");
+        document.querySelector("a").href="#";
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 
 const inputUser= document.querySelector("#usuario");
 const inputClave= document.querySelector("#contraseña");
 
@@ -15,4 +42,4 @@ function ingresar(){
         alert("Usuario Inexistente: debe registrarse");
     } 
     
-}
+} */

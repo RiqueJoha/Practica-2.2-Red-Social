@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="registro.css">
 </head>
 <body>
@@ -20,24 +21,24 @@
         <div class="account-details">
           <div class="form-group">
             <label class="form-title" for="">Usuario</label>
-            <input type="usuario" placeholder="Usuario" required>
+            <input id="usuario-ingresado" type="usuario" placeholder="Usuario" required>
           </div>
           <div class="form-group">
             <label class="form-title" for="">Contraseña</label>
-            <input type="contraseña" placeholder="Ingresa tu Contraseña" required>
+            <input id="contrasenia-ingresada"type="contraseña" placeholder="Ingresa tu Contraseña" required>
           </div>
           <div class="form-group">
             <label class="form-title" for="">Confirmación de nueva Contraseña</label>
-            <input type="nueva contraseña" placeholder="Confirma tu nueva contraseña" required>
+            <input id="contrasenia-verif" placeholder="Confirma tu nueva contraseña" required>
           </div>
         </div>
         <div class="button">
           <!-- input type="submit" value="Register"> -->
-          <a href="index.html">Registrar</a>
+          <a onclick="registrar()"  class="btn btn-sucess btn-lg" href="index.html" role="button">Registrar</a>
         </div>
       </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="inicio.js"></script>
   </body>
-</html>
-</body>
 </html>
